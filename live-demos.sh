@@ -73,3 +73,31 @@ echo "I'm Miguel. I repeat, Miguel" | sed s/Miguel/Fernando/g
 
 # signals
 # leave this to Fernando
+
+# pacman management
+sudo pacman -S sl
+
+# rg
+# fzf
+find . -type d
+find . | fzf
+rg subvisual
+rg -g *.rb subvisual
+
+# PATH
+mkdir $HOME/custom_bins
+vim $HOME/custom_bins/hello
+hello # command not found
+echo $PATH
+export PATH="$HOME/custom_bins:$PATH"
+hello
+
+# custom commands
+g
+v
+r
+mkcd
+cdls
+xkcd
+most
+extract
